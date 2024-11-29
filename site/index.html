@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DE ONDE VOCÊ É?</title>
+    <style>
+        body{
+      background-color: cadetblue;
+      color: black;
+      font: normal 17pt Arial;
+
+    }
+    </style>
+</head>
+<body>
+    <h1>De onde você é?</h1>
+
+    <script>
+        var pais = prompt('Qual é o seu país de origem?')
+                   console.log(`Você é do ${pais}.`)
+                   document.write(`Você é do ${pais} <br>`)
+  
+        var América = ['Estados Unidos' , 'Canadá' , 'México' , 'Argentina' , 'Chile' , 'Peru', 'Colômbia', 'Venezuela' ];
+        var América_do_Sul = ['Brasil']
+        var Europa = ['Portugal', 'França', 'Alemanha', 'Espanha', 'Itália', 'Reino Unido', 'Holanda', 'Suécia', 'Rússia'];
+        var Ásia = ['China' , 'Japão' , 'Índia' , 'Coreia do Sul', 'Indonésia', 'Tailândia', 'Vietnã', 'Filipinas', 'Japão'];
+        var África = ['Nigéria', 'África do Sul', 'Egito', 'Quênia', 'Marrocos', 'Angola', 'Moçambique'];
+        var Oceania = ['Austrália', 'Nova Zelândia', 'Fiji', 'Papua-Nova Guiné'];
+        
+  
+          if (América.includes(pais)) {
+          console.log('Você é americano!')
+          document.write('Você é americano! <br>')}
+  
+          else if (América_do_Sul.includes(pais)){
+          console.log('Você é Sul-americano')
+          document.write('Você é Sul-americano  <br> ')
+          }
+  
+         else if (Europa.includes(pais)) {
+          console.log('Você é europeu!')
+          document.write('Você é europeu! <br>')
+          
+        } else if (Ásia.includes(pais)) {
+          console.log('Você é asiático!')
+          document.write('Você é asiático!  <br>')
+  
+        }else if (África.includes(pais)) {
+          console.log('Você é africano!')
+          document.write('Você é africano!  <br>')
+  
+        }else if (Oceania.includes(pais)) {
+          console.log('Você é oceânico!')
+          document.write('Você é oceânico!  <br>')
+  
+        } 
+  
+  
+      </script>
+</body>
+</html>
